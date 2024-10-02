@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(53, 51, 51);
+    font-family: "Roboto", sans-serif;
+    margin: 1rem;
+    color: rgb(216, 206, 188);
+}
+
+.carousel {
+    display: flex;
+}
+
+.item {
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
+.portrait {
+    height: 18rem;
+    width: 12.06rem;
+}
+
+.card {
+    position: relative;
+    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out, filter 0.3s ease-in-out;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: grid;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(1.15);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card:hover img {
+    filter: brightness(50%);
+}
+
+.card:hover .card-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.card:hover span {
+    display: block;
+}
+
+/*#imagen {
+    position: absolute;
+    margin: 100px;
+}*/
